@@ -196,31 +196,31 @@ public class Main {
 	                    }
 	                    break;
 	                  
-//	                case 3:
-//	                    System.out.print("Enter Employee ID: ");
-//	                    int employeeID = scanner.nextInt();
-//	                    List<Payroll> payrollsForEmployee = payrollService.getPayrollsForEmployee(employeeID);
-//	                    if (!payrollsForEmployee.isEmpty()) {
-//	                        for (Payroll p : payrollsForEmployee) {
-//	                            System.out.println(p);
-//	                        }
-//	                    } else {
-//	                        System.out.println("No payrolls found for this employee.");
-//	                    }
-//	                    break;
-//	                case 4:
-//	                    System.out.print("Enter Start Date (YYYY-MM-DD): ");
-//	                    Date startDate = Date.valueOf(scanner.next());
-//	                    System.out.print("Enter End Date (YYYY-MM-DD): ");
-//	                    Date endDate = Date.valueOf(scanner.next());
-//	                    List<Payroll> payrollsForPeriod = payrollService.getPayrollsForPeriod(startDate, endDate);
-//	                    if (!payrollsForPeriod.isEmpty()) {
-//	                        for (Payroll p : payrollsForPeriod) {
-//	                            System.out.println(p);
-//	                        }
-//	                    } else {
-//	                        System.out.println("No payrolls found for this period.");
-//	                    }
+	                case 3:
+	                    System.out.print("Enter Employee ID: ");
+	                    int employeeID = scanner.nextInt();
+	                    List<Payroll> payrollsForEmployee = payrollService.getPayrollsForEmployee(employeeID);
+	                    if (!payrollsForEmployee.isEmpty()) {
+	                        for (Payroll p : payrollsForEmployee) {
+	                            System.out.println(p);
+	                        }
+	                    } else {
+	                        System.out.println("No payrolls found for this employee.");
+	                    }
+	                    break;
+	                case 4:
+	                    System.out.print("Enter Start Date (YYYY-MM-DD): ");
+	                    Date startDate = Date.valueOf(scanner.next());
+	                    System.out.print("Enter End Date (YYYY-MM-DD): ");
+	                    Date endDate = Date.valueOf(scanner.next());
+	                    List<Payroll> payrollsForPeriod = payrollService.getPayrollsForPeriod(startDate, endDate);
+	                    if (!payrollsForPeriod.isEmpty()) {
+	                        for (Payroll p : payrollsForPeriod) {
+	                            System.out.println(p);
+	                        }
+	                    } else {
+	                        System.out.println("No payrolls found for this period.");
+	                    }
 //	                    break;
 	                case 3:
 	                    System.out.println("Exiting...");
