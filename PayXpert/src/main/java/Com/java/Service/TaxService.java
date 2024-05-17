@@ -38,16 +38,16 @@ public class TaxService implements ITaxService
 		public List<Tax> getTaxById(int taxId) {
 			return t_dao.getTaxById(taxId);
 		}
-//		 @Override
-//	    public double calculateTax(int employeeId, int taxYear) throws TaxCalculationException {
-//	        try {
-//	            Tax tax = t_dao.getTaxByEmployeeAndYear(employeeId, taxYear);
-//	            int taxAmount = (int) (tax.getTaxableIncome()*10);
-//	            tax.setTaxAmount(taxAmount);
-//	            t_dao.updateTax(tax);
-//	            return taxAmount;
-//	        } catch (Exception e) {
-//	            throw new TaxCalculationException("Error calculating tax for employee ID: " + employeeId + " and tax year: " + taxYear, e);
-//	        }
-//	    }
+		 @Override
+	    public double calculateTax(int employeeId, int taxYear) throws TaxCalculationException {
+	        try {
+	            Tax tax = t_dao.getTaxByEmployeeAndYear(employeeId, taxYear);
+	            int taxAmount = (int) (tax.getTaxableIncome()*10);
+	            tax.setTaxAmount(taxAmount);
+	            t_dao.updateTax(tax);
+	            return taxAmount;
+	        } catch (Exception e) {
+	            throw new TaxCalculationException("Error calculating tax for employee ID: " + employeeId + " and tax year: " + taxYear, e);
+	        }
+	    }
 }
